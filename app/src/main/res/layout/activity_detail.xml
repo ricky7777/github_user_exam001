@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/id_dt_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_dt_title_bar"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/frag_detail_header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:id="@+id/id_dt_cell1"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            />
+
+        <LinearLayout
+            android:id="@+id/id_dt_cell2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/id_dt_cell3"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/id_dt_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

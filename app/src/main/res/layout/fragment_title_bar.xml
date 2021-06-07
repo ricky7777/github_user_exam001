@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    >
+
+    <FrameLayout
+        android:id="@+id/id_title_left_view"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        >
+        <ImageButton
+            android:id="@+id/id_title_left_close"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:background="@drawable/icon_close"
+            />
+        <ImageButton
+            android:id="@+id/id_title_left_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:background="@drawable/icon_arrow_left"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/id_title_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/darkText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/id_title_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:gravity="right|center_vertical"
+        android:text=""
+        android:textColor="@color/darkText"
+        android:textSize="16sp"
+        android:background="@drawable/shape_null_bk_button"
+        />
+
+</RelativeLayout>
